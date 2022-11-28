@@ -1,5 +1,5 @@
 {
-  "name": "parse-dicom",
+  "name": "parser-dicom",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
