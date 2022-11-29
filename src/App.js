@@ -327,6 +327,7 @@ function App() {
                   </Form.Item>
                   <Form.Item label="Bucket">
                     <Input
+                      placeholder="vinlab-sample-bucket"
                       defaultValue={bucketName}
                       onChange={(e) => setBucketName(e.target.value)}
                     />
@@ -337,6 +338,7 @@ function App() {
                 <Input
                   defaultValue={dataPath}
                   onChange={(e) => setDataPath(e.target.value)}
+                  placeholder="sample-data/BN000402566"
                 />
               </Form.Item>
               <Form.Item label="Type">
