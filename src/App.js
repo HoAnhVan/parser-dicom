@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Layout, Menu, Form, Input, message, Spin, Radio } from 'antd';
-import { CloudOutlined, DesktopOutlined } from '@ant-design/icons';
+import {
+  CloudOutlined,
+  DesktopOutlined,
+  DownloadOutlined,
+} from '@ant-design/icons';
 import AWS from 'aws-sdk';
 import dcmjs from 'dcmjs';
 import './App.css';
@@ -345,8 +349,12 @@ function App() {
                 </Radio.Group>
               </Form.Item>
               <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button type="primary" onClick={handleGetPreset}>
-                  Download Preset
+                <Button
+                  type="primary"
+                  onClick={handleGetPreset}
+                  icon={<DownloadOutlined />}
+                >
+                  Download
                 </Button>
               </Form.Item>
             </Form>
