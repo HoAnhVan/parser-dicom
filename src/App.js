@@ -247,9 +247,18 @@ function App() {
               }
             }),
           };
+
+          if (type === 2) {
+            delete serData.series_instance_uid;
+          }
           return serData;
         }),
       };
+
+      if (type === 2) {
+        delete tranformData.study.study_instance_uid;
+      }
+
       presetsData.push(tranformData);
     });
   };
